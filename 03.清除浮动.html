@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 浮动带来的影响：
+1.父元素没有高度（很多情况下不给父元素指定高度）
+2.子元素浮动（浮动可以让元素脱离文档流啊（浮起来和父元素不在一个图层），影响周围元素的布局）
+3.影响其他盒子布局了（子元素浮起来，父元素就往上移动）
+ */
+    .main {
+      overflow: hidden;
+      width: 300px;
+      border: 1px solid red;
+      margin: 0 auto;
+    }
+
+    .main .son1 {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    .main .son2 {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+    }
+
+    .footer {
+      width: 500px;
+      height: 100px;
+      background-color: black;
+    }
+
+    /* 额外标签法 */
+    /* 清除浮动 */
+    /* .clear {
+      clear: both;
+    } */
+
+
+    /* 清除浮动单伪元素方法 */
+    /* .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    } */
+
+    /* 清除浮动双伪元素方法 */
+    /* .clearfix:after,
+    .clearfix:before {
+      content: "";
+      display: table;
+    }
+
+    .clearfix:before {
+      clear: both;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="main clearfix">
+    <div class="son1"></div>
+    <div class="son2"></div>
+    <!-- 额外标签法：添加一个块级盒子 -->
+    <!-- <div class="clear"></div> -->
+
+  </div>
+  <div class="footer"></div>
+</body>
+
+</html>
