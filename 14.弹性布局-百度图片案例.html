@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 瀑布流效果 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .col-flex {
+      gap: 16px;
+      display: flex;
+      width: 1180px;
+      margin: 20px auto;
+      /* border: 1px solid red; */
+
+    }
+
+    .col-flex .item {
+      flex: 1;
+    }
+
+    .col-flex .item a {
+      /* 溢出隐藏 */
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      border-radius: 18px;
+      margin-bottom: 15px;
+    }
+
+    .col-flex .item a img {
+      /* 修改图片下空白缝隙，改成块级元素（小米） */
+      /* display: block; */
+      /* 只要不是baseline，就不会有空白缝隙 */
+      /* vertical-align: middle; */
+      vertical-align: top;
+      /* vertical-align: bottom; */
+      /* vertical-align: baseline; */
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="col-flex">
+    <div class="item">
+      <a href="#"><img src="./img(2)/c1.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c3.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c4.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c6.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c7.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c8.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c9.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c10.webp" alt=""></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="./img(2)/c2-1.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2-2.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2-3.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2-4.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2-5.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2-6.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2-7.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c2-8.webp" alt=""></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="./img(2)/c3-1.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c3-2.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c3-3.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c3-4.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c3-5.webp" alt=""></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="./img(2)/c4-1.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c4-2.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c4-3.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c4-4.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c4-5.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c4-6.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c4-7.webp" alt=""></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="./img(2)/c5-1.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-2.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-3.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-4.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-5.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-6.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-7.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-8.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-9.webp" alt=""></a>
+      <a href="#"><img src="./img(2)/c5-10.webp" alt=""></a>
+    </div>
+  </div>
+</body>
+
+</html>

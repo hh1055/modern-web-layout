@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      /* 添加弹性布局（父控子，且必须是亲父子） */
+      /* 默认主轴（水平方向） */
+      /* 若子元素没有大小则拉伸充满父元素（高度拉伸，宽度根据子元素内容确定） */
+      /* 若子元素总宽度超过父元素则默认压缩子元素 */
+      /* 真正开发都是设置大小的 */
+      display: flex;
+      width: 500px;
+      height: 100px;
+      border: 1px solid red;
+    }
+
+    .box .item {
+      width: 1000px;
+      /* height: 100px; */
+      background-color: pink;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item">1111</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+
+</html>

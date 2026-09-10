@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    .sanlian {
+      /* 让三个点赞在一行水平摆放 */
+      display: flex;
+      margin: 20px;
+      font-size: 13px;
+    }
+
+    .iconfont {
+      font-size: 30px;
+    }
+
+    .sanlian li {
+      width: 60px;
+      height: 80px;
+      /* border: 1px solid red */
+    }
+
+    /* 想把图标和文字竖着放页面中间 */
+    /* i和p的父亲--a */
+    /* 给a */
+    .sanlian li a {
+      display: flex;
+      /* 改变主轴方向，让文字和图标竖着显示 */
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+      /* a（行内元素），如果给了flex布局则可以直接设置宽度高度 */
+      align-items: center;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="sanlian">
+    <li>
+      <a href="#">
+        <i class="iconfont icon-dianzan"></i>
+        <p>点赞</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="iconfont icon-yingbi"></i>
+
+        <p>硬币</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="iconfont icon-shoucang"></i>
+
+        <p>收藏</p>
+      </a>
+    </li>
+  </ul>
+
+</body>
+
+</html>
