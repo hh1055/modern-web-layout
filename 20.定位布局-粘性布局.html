@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>粘性布局</title>
+  <style>
+    .nav {
+      /* 粘性定位 */
+      position: sticky;
+      top: 0;
+      width: 1000px;
+      height: 100px;
+      background-color: pink;
+      margin: 100px auto;
+    }
+
+    .main {
+      height: 2000px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">导航部分</nav>
+  <main class="main"></main>
+</body>
+
+</html>

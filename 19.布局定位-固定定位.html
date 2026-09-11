@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      /* 固定定位，元素脱离正常流，不占空间，其他元素按原布局排列， */
+      /* 始终相对浏览器窗口（视口）定位，滚动页面位置不变 */
+      /* 属性：top、bottom、left、right (top>bottom,left>right)  */
+      position: fixed;
+      bottom: 30px;
+      /* 居中显示 */
+      left: 50%;
+      margin-left: -300px;
+      width: 600px;
+      height: 120px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

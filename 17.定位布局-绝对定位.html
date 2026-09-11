@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background-color: pink;
+      margin: 50px;
+    }
+
+    .son1 {
+      /* 给元素添加绝对定位 */
+      /* 元素脱离正常流，不占据空间 */
+      /* 添加这句话，紫色盒子看上边有位置就到上边去了（蓝色盒子下） */
+      /* 相对于最近的已定位祖先元素，若无定位则相对于视图定位 */
+      /* 属性：top bottom right left(优先级top>bottom,left>right) */
+      /* 定位常用的布局技巧：子绝父相 */
+      position: absolute;
+      top: 150px;
+      left: 150px;
+      width: 150px;
+      height: 150px;
+      background-color: skyblue;
+    }
+
+    .son2 {
+      width: 120px;
+      height: 120px;
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="son1">第一个盒子</div>
+    <div class="son2">第二个盒子</div>
+  </div>
+
+</body>
+
+</html>
