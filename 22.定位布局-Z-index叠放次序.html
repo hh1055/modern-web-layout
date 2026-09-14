@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box img {
+      position: absolute;
+    }
+
+    .tel1 {
+      left: 30px;
+    }
+
+    .tel1:hover {
+      /* z-index:数值;设定层级 */
+      /* 值为整数或auto，数值越大层级越高，默认值为auto（等同于未设置） */
+      /* 生效条件：仅对定位元素（position的值为relative，absolute，fixed，sticky）生效 */
+      z-index: 1;
+    }
+
+    .tel2 {
+      left: 90px;
+    }
+
+    .tel2:hover {
+      z-index: 1;
+    }
+
+    .tel3 {
+      left: 150px;
+    }
+
+    .tel3:hover {
+      z-index: 1;
+    }
+
+    .tel4 {
+      left: 210px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img src="./img(2)/tel1.png" alt="" class="tel1">
+    <img src="./img(2)/tel2.png" alt="" class="tel2">
+    <img src="./img(2)/tel3.png" alt="" class="tel3">
+    <img src="./img(2)/tel4.png" alt="" class="tel4">
+  </div>
+</body>
+
+</html>
